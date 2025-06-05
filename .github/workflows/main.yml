@@ -1,1 +1,17 @@
-.github/workflows/main.yml
+name: Hello Workflow
+
+on: [push]
+
+jobs:
+  hello_world_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello from Job 1
+        run: echo "Hello World 1"
+
+  hello_world_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello from Job 2
+        run: echo "Hello World 2"
+
